@@ -6,22 +6,6 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
-
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
 
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
@@ -29,11 +13,40 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Bird emu = new Bird();
+            emu.usesSexualReproduction = true;
+            emu.isMulticellular = true;
+            emu.isHeterotrophic = true;
+            emu.hasSensoryOrgans = true;
+            emu.hasBeak = true;
+            emu.hasFeathers = true;
+            emu.hasWings = true;
+            emu.canFly = true;
+
+            Console.WriteLine($"-------- Emu --------");
+            emu.PrintAnimal();
+            emu.PrintBird();
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            Reptile viper = new Reptile();
+            viper.usesSexualReproduction = true;
+            viper.isMulticellular = true;
+            viper.isHeterotrophic = true;
+            viper.hasSensoryOrgans = true;
+            viper.isCold_Blooded = true;
+            viper.hasScales = true;
+            viper.hasLegs = false;
+            viper.environment = "Land";
+
+            Console.WriteLine($"-------- Viper --------");
+            viper.PrintAnimal();
+            viper.PrintReptile();
         }
     }
 }
